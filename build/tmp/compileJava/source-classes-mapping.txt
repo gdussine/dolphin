@@ -91,7 +91,9 @@ com/jump/dolphin/Ratio.java
  com.jump.dolphin.Ratio
 eu/telecomnancy/dolphin/model/ODLine.java
  eu.telecomnancy.dolphin.model.ODLine
-fr/gdussine/dolphin/BasicApp.java
- fr.gdussine.dolphin.BasicApp
 fr/gdussine/dolphin/core/Combiner.java
  fr.gdussine.dolphin.core.Combiner
+fr/gdussine/dolphin/BasicApp.java
+ fr.gdussine.dolphin.BasicApp
+fr/gdussine/dolphin/model/TreeNode.java
+ fr.gdussine.dolphin.model.TreeNode
