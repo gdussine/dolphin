@@ -27,6 +27,10 @@ public class Synergie {
         return synergie;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public Double get(Integer id){
         return synergie.get(id);
     }
@@ -34,7 +38,7 @@ public class Synergie {
     public void loadMap(List<Integer> assetsIds, Map<Integer, Synergie> synergies){
 
         if(synergies.get(id)!=null){
-            System.out.println("Valeur déjà connue");
+            //System.out.println("Valeur déjà connue");
             this.synergie = synergies.get(id).synergie;
             return;
         }
@@ -65,6 +69,27 @@ public class Synergie {
                 .collect(Collectors.toList());
     }
 
+    public Map.Entry<Integer, Double> getMax(){
+        Map.Entry<Integer, Double> res = null;
+        for(Map.Entry<Integer, Double> entry : synergie.entrySet()) {
+            if (res == null || res.getValue() < entry.getValue()) {
+                res = Map.entry(entry.getKey(), entry.getValue());
+            }
+        }
+        return res;
+    }
+
+    public Map.Entry<Integer, Double> getMin(){
+        Map.Entry<Integer, Double> res = null;
+        for(Map.Entry<Integer, Double> entry : synergie.entrySet()) {
+            if (res == null || res.getValue() > entry.getValue()) {
+                res = Map.entry(entry.getKey(), entry.getValue());
+            }
+        }
+        return res;
+    }
+
+
     @Override
     public String toString() {
         double moyenne = 0;
@@ -83,6 +108,6 @@ public class Synergie {
                 min_id = entry.getKey();
             }
         }
-        return "Synergie("+id+") : moy="+moyenne+" min("+min_id+")="+min+" min("+max_id+")="+max;
+        return "Synergie("+id+") : moy="+moyenne+" min("+min_id+")="+min+" max("+max_id+")="+max;
     }
 }

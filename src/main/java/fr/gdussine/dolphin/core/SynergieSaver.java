@@ -39,13 +39,13 @@ public class SynergieSaver {
         List<Integer> sortedIds = allIds.stream().sorted((o1,o2)->Double.compare(mapRatio.get(o2), mapRatio.get(o1))).collect(Collectors.toList()).subList(0,100);
         System.out.println(sortedIds);
         for(int id : sortedIds){
-            System.out.println("Calcul de l'id "+id);
+            //System.out.println("Calcul de l'id "+id);
             read();
             Synergie synergie = new Synergie(id, mapRatio);
             synergie.loadMap(sortedIds, synergies);
             synergies.put(id, synergie);
             write();
-            System.out.println("Fin du calcul de l'id "+id);
+            //System.out.println("Fin du calcul de l'id "+id);
         }
     }
 
@@ -56,5 +56,7 @@ public class SynergieSaver {
         writer.close();
     }
 
-
+    public Map<Integer, Synergie> getSynergies() {
+        return synergies;
+    }
 }

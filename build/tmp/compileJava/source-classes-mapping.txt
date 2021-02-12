@@ -1,0 +1,97 @@
+eu/telecomnancy/dolphin/util/Genese.java
+ eu.telecomnancy.dolphin.util.Genese
+eu/telecomnancy/dolphin/model/TestAllIn.java
+ eu.telecomnancy.dolphin.model.TestAllIn
+com/jump/dolphin/RESTManager.java
+ com.jump.dolphin.RESTManager
+ com.jump.dolphin.RESTManager$1
+fr/gdussine/dolphin/core/PortfolioSelector.java
+ fr.gdussine.dolphin.core.PortfolioSelector
+com/jump/dolphin/Portfolio.java
+ com.jump.dolphin.Portfolio
+com/jump/dolphin/TestUser.java
+ com.jump.dolphin.TestUser
+eu/telecomnancy/dolphin/genetic/Individual.java
+ eu.telecomnancy.dolphin.genetic.Individual
+com/jump/dolphin/ChangeRate.java
+ com.jump.dolphin.ChangeRate
+eu/telecomnancy/dolphin/util/DolphinAPIService.java
+ eu.telecomnancy.dolphin.util.DolphinAPIService
+com/jump/dolphin/AssetCurrency.java
+ com.jump.dolphin.AssetCurrency
+com/jump/dolphin/Price.java
+ com.jump.dolphin.Price
+com/jump/dolphin/DynAmountLineCurrencyModel.java
+ com.jump.dolphin.DynAmountLineCurrencyModel
+com/jump/dolphin/EnumAssetType.java
+ com.jump.dolphin.EnumAssetType
+fr/gdussine/dolphin/model/GuiPortfolio.java
+ fr.gdussine.dolphin.model.GuiPortfolio
+eu/telecomnancy/dolphin/genetic/Population.java
+ eu.telecomnancy.dolphin.genetic.Population
+ eu.telecomnancy.dolphin.genetic.Population$1
+com/jump/dolphin/JumpValue.java
+ com.jump.dolphin.JumpValue
+fr/gdussine/dolphin/core/PortfolioBuilder.java
+ fr.gdussine.dolphin.core.PortfolioBuilder
+com/jump/dolphin/RatioMultiAssetParamModel.java
+ com.jump.dolphin.RatioMultiAssetParamModel
+fr/gdussine/dolphin/core/Synergie.java
+ fr.gdussine.dolphin.core.Synergie
+com/jump/dolphin/NumberValue.java
+ com.jump.dolphin.NumberValue
+com/jump/dolphin/DynAmountLineAssetModel.java
+ com.jump.dolphin.DynAmountLineAssetModel
+eu/telecomnancy/dolphin/model/Dooglas.java
+ eu.telecomnancy.dolphin.model.Dooglas
+com/jump/dolphin/MonetaryNumber.java
+ com.jump.dolphin.MonetaryNumber
+eu/telecomnancy/dolphin/model/SimplexClass.java
+ eu.telecomnancy.dolphin.model.SimplexClass
+ eu.telecomnancy.dolphin.model.SimplexClass$ERROR
+com/jump/dolphin/EnumDynAmountTypeWebModel.java
+ com.jump.dolphin.EnumDynAmountTypeWebModel
+com/jump/dolphin/TestGenerateNaifPortfolio.java
+ com.jump.dolphin.TestGenerateNaifPortfolio
+ com.jump.dolphin.TestGenerateNaifPortfolio$ComparatorByRatio
+fr/gdussine/dolphin/api/JumpService.java
+ fr.gdussine.dolphin.api.JumpService
+com/jump/dolphin/Asset.java
+ com.jump.dolphin.Asset
+com/jump/dolphin/PercentNumber.java
+ com.jump.dolphin.PercentNumber
+com/jump/dolphin/RatioResult.java
+ com.jump.dolphin.RatioResult
+com/jump/dolphin/AssetCurrencyManager.java
+ com.jump.dolphin.AssetCurrencyManager
+com/jump/dolphin/DynAmountLineContainerModel.java
+ com.jump.dolphin.DynAmountLineContainerModel
+fr/gdussine/dolphin/core/SynergieSaver.java
+ fr.gdussine.dolphin.core.SynergieSaver
+ fr.gdussine.dolphin.core.SynergieSaver$1
+eu/telecomnancy/dolphin/util/ODUtils.java
+ eu.telecomnancy.dolphin.util.ODUtils
+eu/telecomnancy/dolphin/model/ODPortfolio.java
+ eu.telecomnancy.dolphin.model.ODPortfolio
+com/jump/dolphin/RequestUtil.java
+ com.jump.dolphin.RequestUtil
+eu/telecomnancy/dolphin/core/MainApp.java
+ eu.telecomnancy.dolphin.core.MainApp
+eu/telecomnancy/dolphin/genetic/GeneticAlgo.java
+ eu.telecomnancy.dolphin.genetic.GeneticAlgo
+eu/telecomnancy/dolphin/util/Context.java
+ eu.telecomnancy.dolphin.util.Context
+com/jump/dolphin/ErrorMessage.java
+ com.jump.dolphin.ErrorMessage
+com/jump/dolphin/Evaluation.java
+ com.jump.dolphin.Evaluation
+ com.jump.dolphin.Evaluation$1
+ com.jump.dolphin.Evaluation$PortfolioEvaluationInfos
+com/jump/dolphin/Ratio.java
+ com.jump.dolphin.Ratio
+eu/telecomnancy/dolphin/model/ODLine.java
+ eu.telecomnancy.dolphin.model.ODLine
+fr/gdussine/dolphin/BasicApp.java
+ fr.gdussine.dolphin.BasicApp
+fr/gdussine/dolphin/core/Combiner.java
+ fr.gdussine.dolphin.core.Combiner

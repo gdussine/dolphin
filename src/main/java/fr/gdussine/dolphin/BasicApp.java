@@ -4,10 +4,7 @@ import com.google.gson.Gson;
 import com.jump.dolphin.*;
 import eu.telecomnancy.dolphin.util.Context;
 import fr.gdussine.dolphin.api.JumpService;
-import fr.gdussine.dolphin.core.PortfolioBuilder;
-import fr.gdussine.dolphin.core.PortfolioSelector;
-import fr.gdussine.dolphin.core.Synergie;
-import fr.gdussine.dolphin.core.SynergieSaver;
+import fr.gdussine.dolphin.core.*;
 import org.apache.http.client.methods.HttpRequestBase;
 
 import java.io.BufferedWriter;
@@ -45,6 +42,8 @@ public class BasicApp {
         SynergieSaver saver = new SynergieSaver();
         try {
             saver.calcul();
+            Combiner combiner = new Combiner(saver.getSynergies());
+            combiner.info();
         } catch (IOException e) {
 
         }
