@@ -60,9 +60,6 @@ public class Combiner {
         return maxSyn;
     }
 
-    public void info(){
-        generation();
-    }
 
     public List<Integer> getNPareil(int id, int n){
         List<Integer> listId = new ArrayList<>();
@@ -94,7 +91,7 @@ public class Combiner {
         return res;
     }
 
-    public void generation(){
+    public Map<Integer, Integer> generation(){
         sorter();
         Synergie synergie = best();
         Integer id1 = synergie.getMax().getKey();
@@ -102,13 +99,14 @@ public class Combiner {
         Integer id2 = synergie.getId();
         List<Integer> resId2 = getNPareil(id2,16);
         PortfolioBuilder builder = new PortfolioBuilder();
-        builder.addAll(merge(resId1, resId2));
+        Map<Integer, Integer> res = merge(resId1, resId2);
+        builder.addAll(res);
         Portfolio p = builder.build();
         JumpService.getInstance().setPortfolio(p);
         JumpService.getInstance().getPortfolio();
         System.out.println(JumpService.getInstance().getSharpValue());
-        System.out.println(merge(resId1, resId2).keySet().size());
-
+        System.out.println(res.keySet().size());
+        return res;
     }
 
 

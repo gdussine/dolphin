@@ -48,10 +48,11 @@ public class BasicApp {
         List<Integer> locIdAssetList = api.getAssetsId();
 
         SynergieSaver saver = new SynergieSaver();
+        Map<Integer, Integer> res = null;
         try {
             saver.calcul();
             Combiner combiner = new Combiner(saver.getSynergies());
-            combiner.info();
+             res = combiner.generation();
         } catch (IOException e) {
 
         }
