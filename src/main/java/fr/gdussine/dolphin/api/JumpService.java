@@ -62,11 +62,14 @@ public class JumpService {
         restManager.pushPortfolio(Context.get().PTF_ID, portfolio);
     }
 
-    public Double getQuantity(Asset asset, Double quantity){
+
+    public Asset getAsset(int id) {
+        return restManager.getAsset(id, Context.get().PTF_DATE_START);
+    }
+
+    public Double getMontant(Asset asset){
         MonetaryNumber value = asset.monetaryPrice;
-        double res = quantity / (value._amount * changeRateMap.get(value._currency));
-        System.out.println(res);
-        return res;
+        return  (value._amount * changeRateMap.get(value._currency));
     }
 
     public Map<Integer, Double> getListAssetSharpValue(List<Integer> assetIds){
@@ -91,6 +94,10 @@ public class JumpService {
                 .get(id)
                 .get(Context.get().API_SHARPE_ID)._value.replace(',','.'));
         return v;
+    }
+
+    public AssetCurrencyManager getACM(){
+        return new AssetCurrencyManager(Context.get().PTF_DATE_START, restManager);
     }
 
     public Double getSharpValue(){

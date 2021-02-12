@@ -1,6 +1,7 @@
 package fr.gdussine.dolphin.core;
 
 import com.jump.dolphin.Portfolio;
+import eu.telecomnancy.dolphin.util.ODUtils;
 import fr.gdussine.dolphin.api.JumpService;
 
 import java.util.ArrayList;
@@ -83,10 +84,10 @@ public class Combiner {
     public Map<Integer, Integer> merge(List<Integer> l1, List<Integer> l2){
         Map<Integer, Integer> res = new HashMap<>();
         for(int id1 : l1){
-            res.put(id1,10);
+            res.put(id1, 100);
         }
         for(int id2 : l2){
-            res.put(id2,10);
+            res.put(id2,100);
         }
         return res;
     }
