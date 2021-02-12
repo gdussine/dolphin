@@ -3,6 +3,7 @@ package fr.gdussine.dolphin.model;
 import com.jump.dolphin.*;
 import eu.telecomnancy.dolphin.util.Context;
 import fr.gdussine.dolphin.api.JumpService;
+import fr.gdussine.dolphin.core.PortfolioBuilder;
 
 import java.util.Map;
 
@@ -27,7 +28,9 @@ public class QuantityAdapter {
         builder.addAll(res);
         Portfolio p = builder.build();
         JumpService.getInstance().setPortfolio(p);
-        JumpService.getInstance().getPorfolio();
+        double val = JumpService.getInstance().getSharpValue();
+        System.out.println(val);
+        System.out.println(res);
     }
 
 

@@ -11,6 +11,7 @@ import fr.gdussine.dolphin.core.PortfolioBuilder;
 import fr.gdussine.dolphin.core.PortfolioSelector;
 import fr.gdussine.dolphin.core.Synergie;
 import fr.gdussine.dolphin.core.SynergieSaver;
+import fr.gdussine.dolphin.model.QuantityAdapter;
 import fr.gdussine.dolphin.model.TreeNode;
 import org.apache.http.client.methods.HttpRequestBase;
 
@@ -56,7 +57,8 @@ public class BasicApp {
         } catch (IOException e) {
 
         }
-
+        QuantityAdapter adapter = new QuantityAdapter(res);
+        adapter.process();
 
     }
 }
