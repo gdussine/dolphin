@@ -2,9 +2,16 @@ package fr.gdussine.dolphin;
 
 import com.google.gson.Gson;
 import com.jump.dolphin.*;
+import com.sun.source.tree.Tree;
+import com.sun.source.tree.TreeVisitor;
 import eu.telecomnancy.dolphin.util.Context;
 import fr.gdussine.dolphin.api.JumpService;
 import fr.gdussine.dolphin.core.*;
+import fr.gdussine.dolphin.core.PortfolioBuilder;
+import fr.gdussine.dolphin.core.PortfolioSelector;
+import fr.gdussine.dolphin.core.Synergie;
+import fr.gdussine.dolphin.core.SynergieSaver;
+import fr.gdussine.dolphin.model.TreeNode;
 import org.apache.http.client.methods.HttpRequestBase;
 
 import java.io.BufferedWriter;
@@ -19,6 +26,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
 
 /**
  * Programme naif de référence.
@@ -46,6 +54,22 @@ public class BasicApp {
             combiner.info();
         } catch (IOException e) {
 
+        }
+
+        List<Integer> liste;
+
+        TreeNode<String> root = new TreeNode<String>("root");
+        {
+            TreeNode<String> node0 = root.addChild("node0");
+            TreeNode<String> node1 = root.addChild("node1");
+            TreeNode<String> node2 = root.addChild("node2");
+            {
+                TreeNode<String> node20 = node2.addChild(null);
+                TreeNode<String> node21 = node2.addChild("node21");
+                {
+                    TreeNode<String> node210 = node20.addChild("node210");
+                }
+            }
         }
     }
 }
