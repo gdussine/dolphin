@@ -36,16 +36,7 @@ import java.util.stream.Collectors;
  * Date: 21/07/2017
  */
 public final class Evaluation {
-    public static final int NB_USER = 10;
-    public static final int ID_RETURN_ANNUAL = 17;
-    public static final int ID_RETURN = 21;
-    public static final int ID_SHARPE = 12;
-    public static final int ID_VOL = 18;
-    public static final int ID_EXPO = 29;
     public static Map<Integer, Ratio> RATIO_MAP = null;
-
-    public static String USERTEST = "user_test";
-    public static String PASSTEST = "jumpTest";
     private static int ID_PTF_REF = Context.get().PTF_ID;
     /**
      * Liste des portefeuilles à évaluer. De préférence dans l'ordres des users
@@ -87,6 +78,7 @@ public final class Evaluation {
                 PORTFOLIO_ID_LIST,
                 RESTManager.PERIOD_START_DATE,
                 RESTManager.PERIOD_END_DATE);
+
 
         Iterator<PortfolioEvaluationInfos> locIterator = locPtfInfoList.iterator();
 

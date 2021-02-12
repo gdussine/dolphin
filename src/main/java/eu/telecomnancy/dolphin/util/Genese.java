@@ -8,12 +8,12 @@ public class Genese {
         Context.get().log();
 
         // Set a candidate solution
-        int value_ref = 5;
+        int value_ref = 4;
 
-        int gene_max = 15;
+        int gene_max = 5;
 
         // Create an initial population
-        Population myPop = new Population(40, true);
+        Population myPop = new Population(30, true);
 
         // Evolve our population until we reach an optimum solution
         int generationCount = 0;

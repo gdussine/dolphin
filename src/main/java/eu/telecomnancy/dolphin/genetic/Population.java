@@ -88,7 +88,7 @@ public class Population {
     }
 
     public void mutate(){
-        //getIndividual(ODUtils.randint(individuals.length, 0)).mutate();
+        individuals[ODUtils.randint(individuals.length, 0)] = Individual.random();
     }
 
     public int size() {
